@@ -36,6 +36,9 @@ ext{
 
     compileSdkVersion = 26
     buildToolsVersion = '26.0.0'
-    minSdkVersion = 16
+    minSdkVersion = 19
     targetSdkVersion = 26
+    geniusVersion = '2.0.0'
+    glideVersion = '3.7.0'
+    circleimageviewVersion = '2.1.0'
 }
