@@ -28,8 +28,8 @@ dependencies {
     compile "com.android.support:support-v4:$rootProject.ext.supportVersion" 
     compile "com.android.support:appcompat-v7:$rootProject.ext.supportVersion" 
     compile "com.jakewharton:butterknife:$rootProject.ext.butterknifeVersion" 
-    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.ext.butterknifeVersion" 
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    testCompile 'junit:junit:4.12'
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.ext.butterknifeVersion"
     compile project(':common')
+    compile 'com.android.support:support-v4:26.+'
+    testCompile 'junit:junit:4.12'
 }
