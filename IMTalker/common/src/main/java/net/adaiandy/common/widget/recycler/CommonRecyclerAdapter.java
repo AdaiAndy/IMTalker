@@ -233,6 +233,19 @@ public abstract class CommonRecyclerAdapter<Data> extends RecyclerView.Adapter<C
         // 当Cell长按时触发
         void onItemLongClick(CommonRecyclerAdapter.ViewHolder holder, Data data);
     }
+    
+    public static abstract class AdapterListenerImp<Data> implements AdapterListener<Data>{
+
+        @Override
+        public void onItemClick(ViewHolder holder, Data data) {
+            
+        }
+
+        @Override
+        public void onItemLongClick(ViewHolder holder, Data data) {
+
+        }
+    }
 
 
     /**

@@ -8,14 +8,19 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import net.adaiandy.common.app.BaseFragment;
+import net.adaiandy.common.widget.GalleryView;
 import net.adaiandy.imtalker.R;
+
+import butterknife.BindView;
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class ActiveFragment extends BaseFragment {
 
-
+    @BindView(R.id.galleyView)
+    GalleryView mGalley;
+    
     public ActiveFragment() {
         // Required empty public constructor
     }
@@ -26,4 +31,14 @@ public class ActiveFragment extends BaseFragment {
     }
 
 
+    @Override
+    protected void initData() {
+        super.initData();
+        mGalley.setUp(getLoaderManager(), new GalleryView.SelectedChangeListener() {
+            @Override
+            public void onSelectedChange(int count) {
+                
+            }
+        });
+    }
 }

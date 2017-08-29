@@ -4,13 +4,13 @@
              android:layout_height="match_parent"
              tools:context="net.adaiandy.imtalker.frags.main.ActiveFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <net.adaiandy.common.widget.GalleryView
+        android:id="@+id/galleyView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:textSize="@dimen/font_20"
-        android:textColor="@color/blue_800"
-        android:text="@string/action_home"/>
+        android:padding="1dp">
 
+    </net.adaiandy.common.widget.GalleryView>
+
+   
 </FrameLayout>
