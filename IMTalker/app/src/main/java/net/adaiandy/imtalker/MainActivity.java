@@ -16,6 +16,7 @@ import com.bumptech.glide.request.target.ViewTarget;
 
 import net.adaiandy.common.app.BaseActivity;
 import net.adaiandy.common.widget.PortraitView;
+import net.adaiandy.imtalker.activities.AccountActivity;
 import net.adaiandy.imtalker.frags.main.ActiveFragment;
 import net.adaiandy.imtalker.frags.main.ContactFragment;
 import net.adaiandy.imtalker.frags.main.GroupFragment;
@@ -101,7 +102,7 @@ public class MainActivity extends BaseActivity implements BottomNavigationView.O
 
     @OnClick(R.id.btn_action)
     void onActionClick() {
-
+        AccountActivity.show(this);
     }
 
 
